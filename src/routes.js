@@ -1,8 +1,9 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router';
+import Test from './components/Test';
 
 export default (
-	<Route path="/" component={}>
+	<Route path="/" component={Test} />
 )
 
 /*<Route path="">

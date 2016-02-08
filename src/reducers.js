@@ -1,10 +1,10 @@
-/*const initialState = {
-	
+const initialState = {
+	something: ''
 }
 
-export function products(state = initialState,action) {
+export function test(state = initialState,action) {
   switch (action.type) {
-    case 'GET_PRODUCTS_SUCCESS':
+    case 'GET_TEST_SUCCESS':
       return {
         ...state,
         ...action.result
@@ -12,4 +12,4 @@ export function products(state = initialState,action) {
     default:
       return state;
   }
-}*/
+}

@@ -1,18 +1,18 @@
-/*export function getProduct (id) {
+export function getTest () {
 	return {
-		types: ['GET_PRODUCT_REQUEST',
-				'GET_PRODUCT_SUCCESS',
-				'GET_PRODUCT_FAILURE'],
+		types: ['GET_TEST_REQUEST',
+				'GET_TEST_SUCCESS',
+				'GET_TEST_FAILURE'],
 		promise: () => {
 			return new Promise((resolve, reject) => {
 				$.ajax({
 					type: 'GET',
 					dataType: 'json',
-					url: '/frpapi/marketplace/products/'+id,
+					url: '/frpapi/test/',
 					success: resolve,
 					error: reject
 				});
 			});
 		}
 	};
-}*/
+}

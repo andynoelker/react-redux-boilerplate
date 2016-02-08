@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware, combineReducers, compose } from 'redux';
 import promiseMiddleware from './middleware/promise-middleware';
-import {  } from './reducers';
+import { test } from './reducers';
 import { reducer as formReducer } from 'redux-form';
 import routes from './routes';
 import { reduxReactRouter, routerStateReducer, ReduxRouter } from 'redux-router';
@@ -15,6 +15,7 @@ export default function(data) {
 	const reducer = combineReducers({
 	  router: routerStateReducer,
 	  form: formReducer,
+	  test,
 	});
 	const store = compose(
 	  applyMiddleware(promiseMiddleware),
