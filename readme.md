@@ -57,6 +57,6 @@ You need to add the root name of the page that your routes will follow inside `c
 
 ```
 const history = useBasename(createHistory)({
-  basename: 'new_project.php'
+  basename: '/new_project.php'
 });
 ```
