@@ -1,5 +1,5 @@
 const initialState = {
-	something: ''
+  something: ''
 }
 
 export function test(state = initialState,action) {

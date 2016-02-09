@@ -22,7 +22,7 @@ Add an entry point that comes from your new project:
 
 ```
 entry: {
-	new_project: './new_project/src/index.js'
+  new_project: './new_project/src/index.js'
 }
 ```
 
@@ -30,6 +30,6 @@ Add the project directory to the module loaders `include` whitelist:
 
 ```
 include: [
-			path.resolve(__dirname, 'new_project'),
-		],
+    path.resolve(__dirname, 'new_project'),
+  ],
 ```

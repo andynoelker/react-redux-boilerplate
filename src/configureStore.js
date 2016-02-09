@@ -12,15 +12,15 @@ const history = useBasename(createHistory)({
 });
 
 export default function(data) {
-	const reducer = combineReducers({
-	  router: routerStateReducer,
-	  form: formReducer,
-	  test,
-	});
-	const store = compose(
-	  applyMiddleware(promiseMiddleware),
-	  reduxReactRouter({ routes, history })
-	)(createStore)(reducer);
+  const reducer = combineReducers({
+    router: routerStateReducer,
+    form: formReducer,
+    test,
+  });
+  const store = compose(
+    applyMiddleware(promiseMiddleware),
+    reduxReactRouter({ routes, history })
+  )(createStore)(reducer);
 
-	return store;
+  return store;
 }

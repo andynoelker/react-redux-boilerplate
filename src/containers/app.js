@@ -7,14 +7,14 @@ import createStore from '../configureStore';
 const store = createStore()
 
 class App extends Component {
-	
-	render() {
-		return (
-			<Provider store={store}>
-				<ReduxRouter />
-			</Provider>
-		)
-	}
+
+  render() {
+    return (
+      <Provider store={store}>
+        <ReduxRouter />
+      </Provider>
+    )
+  }
 }
 
 export default App
