@@ -14,7 +14,7 @@ This repository includes the following technology:
 ### Step 1: Clone project inside front-end directory
 
 ```
-git clone http://192.168.9.32/frp-developers/react-redux-boilerplate.git
+git clone git@gitlab.fitness-plus.local:frp-developers/react-redux-boilerplate.git
 ```
 
 ### Step 2: Rename directory
