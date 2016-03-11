@@ -7,7 +7,6 @@ This repository includes the following technology:
 * [React](https://facebook.github.io/react/)
 * [Redux](https://github.com/rackt/redux)
 * [React-Redux](https://github.com/rackt/react-redux)
-* [React-Router](https://github.com/rackt/react-router)
 * [Redux-Form](https://github.com/erikras/redux-form)
 
 ## Usage
@@ -51,12 +50,4 @@ ReactDOM.render(
   <App />,
   document.getElementById('new_project_id')
 );
-```
-
-You need to add the root name of the page that your routes will follow inside `configureStore.js`:
-
-```
-const history = useBasename(createHistory)({
-  basename: '/new_project.php'
-});
 ```
