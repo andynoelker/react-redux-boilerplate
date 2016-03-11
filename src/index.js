@@ -4,5 +4,5 @@ import App from './containers/app';
 
 ReactDOM.render(
   <App />,
-  document.getElementById('')
+  document.getElementById('marketplace')
 );

@@ -2,8 +2,10 @@ import React from 'react';
 import { Route, Redirect } from 'react-router';
 import Test from './components/Test';
 
-export default (
-  <Route path="/" component={Test} />
+export default (store) => (
+  <Route path="/" component={Test}>
+    <Redirect from="*" to="/" />
+  </Route>
 )
 
 /*<Route path="">
@@ -27,5 +29,6 @@ export default (
       <Route path="providers" component={Providers} />
       <Route path="adjustments" component={Adjustments} />
     </Route>
+    <Redirect from="*" to="/account/profile" />
   </Route>
 </Route>*/

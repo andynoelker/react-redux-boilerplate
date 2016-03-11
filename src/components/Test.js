@@ -40,5 +40,5 @@ class Test extends Component {
   }
 }
 
-//export default connect(mapStateToProps, mapDispatchToProps)(Test);
-export default reduxForm(mapFormToProps(),mapStateToProps,mapDispatchToProps)(Test);
+//export default connect(mapStateToProps, mapDispatchToProps)(Test)
+export default reduxForm(mapFormToProps(),mapStateToProps,mapDispatchToProps)(Test)
