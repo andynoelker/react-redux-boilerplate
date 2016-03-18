@@ -7,7 +7,7 @@ import * as actionCreators from '../actionCreators';
 
 const mapStateToProps = function(state){
   return {
-    initialValues: state.test,
+    initialValues: state.get('test'),
   }
 }
 
@@ -22,7 +22,8 @@ const mapFormToProps = function (state) {
     form: 'deep',
     fields: [
               'something',
-            ]
+            ],
+    getFormState: (state, reduxMountPoint) => state.get(reduxMountPoint).toJS()
   }
 }
 
