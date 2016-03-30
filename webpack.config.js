@@ -25,4 +25,13 @@ module.exports = {
       }
     ]
   },
+  externals: {
+    'react': 'React',
+    'react-dom': 'ReactDOM'
+  },
+  plugins: [
+    new webpack.ProvidePlugin({
+      React: "React", react: "React", "window.react": "React", "window.React": "React"
+    })
+  ]
 };
