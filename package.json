@@ -13,9 +13,11 @@
     "isparta": "^4.0.0",
     "istanbul": "^0.4.2",
     "jquery": "^2.2.2",
+    "jsdom": "^8.2.0",
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^0.14.7",
     "redux-devtools": "~2.1.5",
+    "sinon": "^1.17.3",
     "webpack": "^1.12.14"
   },
   "dependencies": {
@@ -34,7 +36,8 @@
     "whatwg-fetch": "^0.11.0"
   },
   "scripts": {
-    "test": "./node_modules/.bin/babel-node ./node_modules/.bin/isparta cover --root src/  ./node_modules/mocha/bin/_mocha -- ./test",
-    "test:watch": "npm test -- --watch"
+    "test": "mocha --compilers js:babel-register --recursive --require test/dom.js",
+    "test:watch": "npm test -- --watch",
+    "cover": "./node_modules/.bin/babel-node ./node_modules/.bin/isparta cover --root src/  ./node_modules/mocha/bin/_mocha -- ./test --recursive --require test/dom.js"
   }
 }
