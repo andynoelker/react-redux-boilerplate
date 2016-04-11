@@ -15,8 +15,12 @@ module.exports = {
         loader: 'babel-loader',
         test: /\.jsx?$/,
         //exclude: /(node_modules|bower_components)/,
+        exclude: [
+          path.resolve(__dirname, '../utils/node_modules'),
+        ],
         include: [
           path.resolve(__dirname, 'src'),
+          path.resolve(__dirname, '../utils'),
         ],
         query: {
               plugins: ['transform-runtime'],
