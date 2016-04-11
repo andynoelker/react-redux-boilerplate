@@ -25,6 +25,10 @@ module.exports = {
       }
     ]
   },
+  externals: {
+    'react': 'React',
+    'react-dom': 'ReactDOM'
+  },
   plugins: [
     new webpack.ProvidePlugin({
       'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
