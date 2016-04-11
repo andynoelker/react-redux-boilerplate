@@ -1,9 +1,9 @@
 var promiseMiddleware = function() {
   return (next) => (action) => {
-  const { promise, types, ...rest } = action;
+  const { promise, types, ...rest } = action
 
   if (!promise) {
-    return next(action);
+    return next(action)
   }
 
   const [REQUEST, SUCCESS, FAILURE] = types;
@@ -20,4 +20,4 @@ var promiseMiddleware = function() {
   }
 }
 
-export default promiseMiddleware;
+export default promiseMiddleware

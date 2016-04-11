@@ -11,8 +11,8 @@ export function getTest () {
           url: '/frpapi/test/',
           success: resolve,
           error: reject
-        });
-      });
+        })
+      })
     }
   };
 }

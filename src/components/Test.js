@@ -1,9 +1,9 @@
-import React from 'react';
-import { Component } from 'react';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import { reduxForm } from 'redux-form';
-import * as actionCreators from '../actionCreators';
+import React from 'react'
+import { Component } from 'react'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import { reduxForm } from 'redux-form'
+import * as actionCreators from '../actionCreators'
 
 const mapStateToProps = function(state){
   return {
