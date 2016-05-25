@@ -6,17 +6,17 @@ var promiseMiddleware = function() {
     return next(action)
   }
 
-  const [REQUEST, SUCCESS, FAILURE] = types;
+  const [REQUEST, SUCCESS, FAILURE] = types
 
   next({...rest, type: REQUEST})
 
-  return promise().then(
-    (result) => {
-      next({...rest, result, type: SUCCESS})
-    },
-    (error) => {
-      next({...rest, error, type: FAILURE})
-    })
+  return promise().then(r => r.json())
+                  .then(result => {
+                    next({...rest, result, type: SUCCESS})
+                  })
+                  .catch(error => {
+                    next({...rest, error, type: FAILURE})
+                  })
   }
 }
 
