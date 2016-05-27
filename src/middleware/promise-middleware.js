@@ -11,8 +11,8 @@ var promiseMiddleware = function() {
   next({...rest, type: REQUEST})
 
   return promise().then(r => r.json())
-                  .then(result => {
-                    next({...rest, result, type: SUCCESS})
+                  .then(payload => {
+                    next({...rest, payload, type: SUCCESS})
                   })
                   .catch(error => {
                     next({...rest, error, type: FAILURE})
