@@ -1,6 +1,6 @@
 # React Redux Boilerplate
 
-Basic React Redux structures to get our front-end apps off the ground. This is meant to be used within our larger front-end directory where all projects share a single `webpack.config.js`.
+Basic React Redux structures to get front-end apps off the ground.
 
 This repository includes the following technology:
 
@@ -8,13 +8,14 @@ This repository includes the following technology:
 * [Redux](https://github.com/rackt/redux)
 * [React-Redux](https://github.com/rackt/react-redux)
 * [Redux-Form](https://github.com/erikras/redux-form)
+* [Immutable.js](https://facebook.github.io/immutable-js/)
 
 ## Usage
 
 ### Step 1: Clone project inside front-end directory
 
 ```
-git clone git@gitlab.fitness-plus.local:frontend/react-redux-boilerplate.git
+git clone https://github.com/andynoelker/react-redux-boilerplate
 ```
 
 ### Step 2: Rename directory
